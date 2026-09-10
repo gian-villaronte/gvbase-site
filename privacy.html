@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="AutoVault privacy policy and Google Drive data-use disclosure.">
+  <title>Privacy — AutoVault</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav shell"><a class="brand" href="./"><span>AV</span> AutoVault</a><nav><a href="./">Home</a><a aria-current="page" href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+  <main class="shell policy">
+    <p class="eyebrow">Effective September 9, 2026</p>
+    <h1>Privacy & Google Drive data use</h1>
+    <p class="lede">AutoVault is a self-hosted vehicle maintenance application. This policy explains what it stores and how its optional Google Drive backup integration uses Google user data.</p>
+
+    <h2>Data stored by AutoVault</h2>
+    <p>Vehicle details, maintenance metadata, reminders, file hashes, audit events, and synchronization state are stored in SQLite on the user’s home server. Original photos, receipts, invoices, and other evidence are stored as ordinary files on that server, outside SQLite.</p>
+
+    <h2>Google user data accessed</h2>
+    <p>AutoVault requests the non-sensitive Google Drive <code>drive.file</code> permission. It accesses the content and metadata of AutoVault files that it creates, or files the user explicitly makes available to it. It does not request access to unrelated files in the user’s Drive.</p>
+
+    <h2>How Google user data is used</h2>
+    <p>Google Drive access is used only to create a second backup copy, update AutoVault’s human-readable manifests, download AutoVault-created files for SHA-256 integrity verification, and support recovery. AutoVault does not use Google user data for advertising, profiling, credit decisions, or training generalized machine-learning or artificial-intelligence models.</p>
+
+    <h2>Sharing and transfer</h2>
+    <p>AutoVault does not sell Google user data or share it with third parties. Data is transmitted to Google Drive only as necessary to provide the backup and verification features the user requested. AutoVault’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Storage, protection, and retention</h2>
+    <p>The user’s primary evidence copy remains on the home server, and the second copy remains in the user’s Google Drive. OAuth credentials and tokens are stored on the home server with restricted operating-system permissions. Evidence remains until the user removes it. Local database backups retain the newest 30 copies by default.</p>
+
+    <h2>Deletion and revocation</h2>
+    <p>The user can revoke AutoVault’s access at any time from Google Account permissions and can delete the AutoVault folder from Google Drive. The user can also remove local AutoVault data from the home server. Revocation stops future Drive synchronization but does not automatically delete files already stored locally or in Drive.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about consent or this policy can be sent to the user-support email displayed on AutoVault’s Google OAuth consent screen.</p>
+  </main>
+  <footer class="shell"><span>AutoVault · Self-hosted vehicle evidence</span><span><a href="./">Home</a> · <a href="terms.html">Terms</a></span></footer>
+</body>
+</html>

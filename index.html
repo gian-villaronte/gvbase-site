@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="AutoVault is a private, self-hosted vehicle maintenance and warranty-evidence application.">
+  <title>AutoVault — Vehicle maintenance evidence</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav shell">
+    <a class="brand" href="./" aria-label="AutoVault home"><span>AV</span> AutoVault</a>
+    <nav aria-label="Site navigation"><a href="#how-it-works">How it works</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  </header>
+  <main>
+    <section class="hero shell">
+      <p class="eyebrow">Evidence-first vehicle care</p>
+      <h1>Maintenance records you can prove.</h1>
+      <p class="lede">AutoVault is a self-hosted application for recording vehicle service and preserving original photos, receipts, invoices, parts, fluids, costs, and warranty evidence.</p>
+      <div class="pill-row"><span>Private home server</span><span>SHA-256 integrity</span><span>Verified Drive copy</span></div>
+    </section>
+    <section class="shell grid" id="how-it-works">
+      <article><b>01</b><h2>Capture</h2><p>Log DIY or professional maintenance and upload the untouched original evidence from a phone or computer.</p></article>
+      <article><b>02</b><h2>Verify</h2><p>AutoVault calculates a SHA-256 hash and verifies the original file stored on the owner’s home server.</p></article>
+      <article><b>03</b><h2>Protect</h2><p>A background service creates a second copy in Google Drive and verifies it by downloading and hashing it again.</p></article>
+    </section>
+    <section class="shell trust">
+      <div><p class="eyebrow">Narrow access by design</p><h2>Google Drive is used only for AutoVault backups.</h2></div>
+      <p>AutoVault requests the non-sensitive <code>drive.file</code> scope. It can create and manage only the Drive files it creates or that the user explicitly makes available to it; it does not request broad access to unrelated Drive content. Read the <a href="privacy.html">privacy policy</a> for full data-use and retention details.</p>
+    </section>
+  </main>
+  <footer class="shell"><span>AutoVault · Self-hosted vehicle evidence</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span></footer>
+</body>
+</html>
